@@ -1,6 +1,6 @@
 """sbijax: Simulation-based inference in JAX."""
 
-__version__ = "0.3.4"
+__version__ = "0.3.5"
 
 import os
 
@@ -51,5 +51,4 @@ __all__ = [
 style_path = os.path.join(os.path.dirname(__file__), "_src", "plot", "styles")
 style.core.USER_LIBRARY_PATHS.append(style_path)
 style.core.reload_library()
-style.use(os.path.join(style_path, "sbijax.mplstyle"))
 del os, style
